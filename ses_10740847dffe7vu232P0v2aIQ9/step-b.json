@@ -1,0 +1,864 @@
+{
+  "nid": 1,
+  "tag": "div",
+  "rect": { "x": 0, "y": 0, "w": 375, "h": 812 },
+  "id": "settings-page",
+  "layerType": "frame",
+  "layerName": "个人设置页根容器",
+  "layerDescription": "移动端个人设置页面的根布局容器，纵向排列导航栏、用户信息卡片和各项设置分组，浅灰背景，纵向flex布局",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#F5F5F5FF"
+  },
+  "children": [
+    {
+      "nid": 2,
+      "tag": "header",
+      "rect": { "x": 0, "y": 0, "w": 375, "h": 56 },
+      "layerType": "frame",
+      "layerName": "顶部导航栏",
+      "layerDescription": "固定在页面顶部的导航栏，包含返回图标和居中显示的'设置'标题，白色背景，底部带1px分割线",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "fixed",
+        "top": "0px",
+        "zIndex": "100",
+        "backgroundColor": "#FFFFFFFF",
+        "boxShadow": "0px 1px 0px #E5E5E5FF"
+      },
+      "children": [
+        {
+          "nid": 3,
+          "tag": "span",
+          "rect": { "x": 12, "y": 16, "w": 24, "h": 24 },
+          "layerType": "icon",
+          "layerName": "返回图标",
+          "layerDescription": "点击后返回上一页的返回箭头图标，24×24，中等线条1.5px",
+          "style": {
+            "fontSize": "24px",
+            "color": "#1A1A1AFF"
+          }
+        },
+        {
+          "nid": 4,
+          "tag": "h1",
+          "rect": { "x": 127.5, "y": 12, "w": 120, "h": 32 },
+          "layerType": "text",
+          "layerName": "页面标题设置",
+          "layerDescription": "当前页面名称'设置'，24px字号，中等字重500，居中显示",
+          "text": "设置",
+          "style": {
+            "fontSize": "20px",
+            "fontWeight": "600",
+            "color": "#1A1A1AFF"
+          }
+        }
+      ]
+    },
+    {
+      "nid": 5,
+      "tag": "div",
+      "rect": { "x": 0, "y": 56, "w": 375, "h": 812 },
+      "layerType": "frame",
+      "layerName": "可滚动内容区",
+      "layerDescription": "包含用户信息卡片、账号设置、通用设置、关于支持、退出登录按钮和版本号的滚动内容区域，总高度超出屏幕，内容纵向分布",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "paddingTop": "20px",
+        "paddingBottom": "40px",
+        "gap": "16px"
+      },
+      "children": [
+        {
+          "nid": 6,
+          "tag": "div",
+          "rect": { "x": 20, "y": 76, "w": 335, "h": 80 },
+          "layerType": "frame",
+          "layerName": "用户信息卡片",
+          "layerDescription": "白色背景的用户信息展示卡片，16px圆角，横向排列用户头像、用户名、账号ID和编辑按钮",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "padding": "16px",
+            "gap": "16px",
+            "backgroundColor": "#FFFFFFFF",
+            "borderRadius": "12px",
+            "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)"
+          },
+          "children": [
+            {
+              "nid": 7,
+              "tag": "div",
+              "rect": { "x": 36, "y": 92, "w": 56, "h": 56 },
+              "layerType": "component",
+              "layerName": "用户头像",
+              "layerDescription": "圆形用户头像占位区域，56×56，点击跳转到个人资料编辑页，浅灰背景",
+              "style": {
+                "backgroundColor": "#E5E5E5FF",
+                "borderRadius": "40px"
+              }
+            },
+            {
+              "nid": 8,
+              "tag": "div",
+              "rect": { "x": 108, "y": 88, "w": 155, "h": 52 },
+              "layerType": "frame",
+              "layerName": "用户文字信息区",
+              "layerDescription": "纵向排列用户名和账号ID的容器，flex纵向布局，gap为4px",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "4px"
+              },
+              "children": [
+                {
+                  "nid": 9,
+                  "tag": "span",
+                  "rect": { "x": 108, "y": 88, "w": 155, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "用户名",
+                  "layerDescription": "用户昵称为'张三'，16px字号，中等字重500，作为主要识别信息",
+                  "text": "张三",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 10,
+                  "tag": "span",
+                  "rect": { "x": 108, "y": 116, "w": 155, "h": 20 },
+                  "layerType": "text",
+                  "layerName": "用户账号ID",
+                  "layerDescription": "用户账号或ID号'ID: 88273645'，12px字号，浅灰色辅助文字",
+                  "text": "ID: 88273645",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#999999FF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 11,
+              "tag": "span",
+              "rect": { "x": 303, "y": 100, "w": 20, "h": 20 },
+              "layerType": "icon",
+              "layerName": "编辑图标",
+              "layerDescription": "点击跳转个人资料编辑页的编辑铅笔图标，20×20，中等线条1.5px，主色蓝色",
+              "style": {
+                "fontSize": "20px",
+                "color": "#3478F6FF"
+              }
+            }
+          ]
+        },
+        {
+          "nid": 12,
+          "tag": "div",
+          "rect": { "x": 20, "y": 172, "w": 335, "h": 148 },
+          "layerType": "frame",
+          "layerName": "账号设置卡片",
+          "layerDescription": "账号设置功能分组卡片，白色背景，12px圆角，包含手机与邮箱、登录设备管理、账号安全三个设置项，纵向排列",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "backgroundColor": "#FFFFFFFF",
+            "borderRadius": "12px",
+            "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)"
+          },
+          "children": [
+            {
+              "nid": 13,
+              "tag": "div",
+              "rect": { "x": 20, "y": 172, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "手机与邮箱设置项",
+              "layerDescription": "手机与邮箱设置入口，点击跳转二级页面，左侧16px内边距，右侧包含文字和箭头图标",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "borderBottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 14,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 184, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "手机图标",
+                  "layerDescription": "手机与邮箱功能标识图标，16×16，细线1px，次灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 15,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 180, "w": 220, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "手机与邮箱文字",
+                  "layerDescription": "'手机与邮箱'设置项标题文字，14px标准字重400",
+                  "text": "手机与邮箱",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 16,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 184, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标手机邮箱",
+                  "layerDescription": "指示可跳转下一级的右箭头图标，16×16，细线1px，浅灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 17,
+              "tag": "div",
+              "rect": { "x": 20, "y": 220, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "登录设备管理设置项",
+              "layerDescription": "登录设备管理设置入口，点击跳转二级页面，布局同上",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "border-bottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 18,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 232, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "设备图标",
+                  "layerDescription": "登录设备管理功能标识图标，16×16，细线1px，次灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 19,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 228, "w": 220, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "登录设备管理文字",
+                  "layerDescription": "'登录设备管理'设置项标题文字，14px标准字重400",
+                  "text": "登录设备管理",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 20,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 232, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标设备管理",
+                  "layerDescription": "指示可跳转下一级的右箭头图标，16×16，细线1px，浅灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 21,
+              "tag": "div",
+              "rect": { "x": 20, "y": 268, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "账号安全设置项",
+              "layerDescription": "账号安全设置入口，点击跳转二级页面，布局同上",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "nid": 22,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 280, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "安全图标",
+                  "layerDescription": "账号安全功能标识盾牌图标，16×16，细线1px，次灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 23,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 276, "w": 220, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "账号安全文字",
+                  "layerDescription": "'账号安全'设置项标题文字，14px标准字重400",
+                  "text": "账号安全",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 24,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 280, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标安全",
+                  "layerDescription": "指示可跳转下一级的右箭头图标，16×16，细线1px，浅灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 25,
+          "tag": "div",
+          "rect": { "x": 20, "y": 336, "w": 335, "h": 196 },
+          "layerType": "frame",
+          "layerName": "通用设置卡片",
+          "layerDescription": "通用设置功能分组卡片，白色背景，12px圆角，包含通知设置、隐私设置、清除缓存、语言四个设置项",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "backgroundColor": "#FFFFFFFF",
+            "borderRadius": "12px",
+            "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)"
+          },
+          "children": [
+            {
+              "nid": 26,
+              "tag": "div",
+              "rect": { "x": 20, "y": 336, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "通知设置项",
+              "layerDescription": "通知偏好设置入口，点击跳转二级页面",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "borderBottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 27,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 348, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "通知铃铛图标",
+                  "layerDescription": "通知设置功能标识铃铛图标，16×16，细线1px，次灰色",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 28,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 344, "w": 220, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "通知设置文字",
+                  "layerDescription": "'通知设置'标题文字，14px标准字重400",
+                  "text": "通知设置",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 29,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 348, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标通知",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 30,
+              "tag": "div",
+              "rect": { "x": 20, "y": 384, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "隐私设置项",
+              "layerDescription": "隐私偏好设置入口，点击跳转二级页面",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "borderBottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 31,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 396, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "隐私锁图标",
+                  "layerDescription": "隐私设置功能标识锁图标，16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 32,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 392, "w": 220, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "隐私设置文字",
+                  "layerDescription": "'隐私设置'标题文字",
+                  "text": "隐私设置",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 33,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 396, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标隐私",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 34,
+              "tag": "div",
+              "rect": { "x": 20, "y": 432, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "清除缓存设置项",
+              "layerDescription": "清除应用缓存入口，点击后弹出Toast提示，右侧显示当前缓存大小",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "borderBottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 35,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 444, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "清扫缓存图标",
+                  "layerDescription": "清除缓存功能标识扫帚图标，16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 36,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 440, "w": 140, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "清除缓存文字",
+                  "layerDescription": "'清除缓存'标题文字",
+                  "text": "清除缓存",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 37,
+                  "tag": "span",
+                  "rect": { "x": 248, "y": 440, "w": 63, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "缓存大小说明",
+                  "layerDescription": "当前缓存占用容量'256MB'，12px辅助颜色居中显示",
+                  "text": "256MB",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#999999FF",
+                    "textAlign": "right"
+                  }
+                },
+                {
+                  "nid": 38,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 444, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标缓存",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 39,
+              "tag": "div",
+              "rect": { "x": 20, "y": 480, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "语言设置项",
+              "layerDescription": "应用语言切换入口，右侧显示当前语言",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "nid": 40,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 492, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "地球语言图标",
+                  "layerDescription": "语言设置功能标识地球图标，16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 41,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 488, "w": 140, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "语言设置文字",
+                  "layerDescription": "'语言'标题文字",
+                  "text": "语言",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 42,
+                  "tag": "span",
+                  "rect": { "x": 248, "y": 488, "w": 79, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "当前语言中文",
+                  "layerDescription": "当前已选语言'简体中文'，12px辅助颜色",
+                  "text": "简体中文",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#999999FF",
+                    "textAlign": "right"
+                  }
+                },
+                {
+                  "nid": 43,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 492, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标语言",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 44,
+          "tag": "div",
+          "rect": { "x": 20, "y": 548, "w": 335, "h": 148 },
+          "layerType": "frame",
+          "layerName": "关于与支持卡片",
+          "layerDescription": "关于应用和支持功能分组卡片，白色背景，12px圆角，包含帮助中心、意见反馈、关于我们",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "backgroundColor": "#FFFFFFFF",
+            "borderRadius": "12px",
+            "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)"
+          },
+          "children": [
+            {
+              "nid": 45,
+              "tag": "div",
+              "rect": { "x": 20, "y": 548, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "帮助中心项",
+              "layerDescription": "帮助中心入口，点击跳转帮助页面",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "borderBottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 46,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 560, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "帮助问号图标",
+                  "layerDescription": "帮助中心功能标识问号图标，16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 47,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 556, "w": 255, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "帮助中心文字",
+                  "layerDescription": "'帮助中心'标题文字",
+                  "text": "帮助中心",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 48,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 560, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标帮助",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 49,
+              "tag": "div",
+              "rect": { "x": 20, "y": 596, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "意见反馈项",
+              "layerDescription": "用户反馈入口，点击跳转反馈表单",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px",
+                "borderBottom": "1px solid #F0F0F0FF"
+              },
+              "children": [
+                {
+                  "nid": 50,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 608, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "反馈邮件图标",
+                  "layerDescription": "意见反馈功能标识邮件图标，16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 51,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 604, "w": 255, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "意见反馈文字",
+                  "layerDescription": "'意见反馈'标题文字",
+                  "text": "意见反馈",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 52,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 608, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标反馈",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            },
+            {
+              "nid": 53,
+              "tag": "div",
+              "rect": { "x": 20, "y": 644, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "关于我们项",
+              "layerDescription": "关于应用信息入口，右侧显示当前版本号",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "paddingLeft": "16px",
+                "paddingRight": "16px",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "nid": 54,
+                  "tag": "span",
+                  "rect": { "x": 36, "y": 656, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "信息圆形图标",
+                  "layerDescription": "关于功能标识信息圆形图标，16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#666666FF"
+                  }
+                },
+                {
+                  "nid": 55,
+                  "tag": "span",
+                  "rect": { "x": 64, "y": 652, "w": 140, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "关于我们文字",
+                  "layerDescription": "'关于我们'标题文字",
+                  "text": "关于我们",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#1A1A1AFF"
+                  }
+                },
+                {
+                  "nid": 56,
+                  "tag": "span",
+                  "rect": { "x": 248, "y": 652, "w": 63, "h": 24 },
+                  "layerType": "text",
+                  "layerName": "应用版本号v10",
+                  "layerDescription": "当前应用版本号'v1.0.0'，12px辅助颜色",
+                  "text": "v1.0.0",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#999999FF",
+                    "textAlign": "right"
+                  }
+                },
+                {
+                  "nid": 57,
+                  "tag": "span",
+                  "rect": { "x": 319, "y": 656, "w": 16, "h": 16 },
+                  "layerType": "icon",
+                  "layerName": "右箭头图标关于",
+                  "layerDescription": "右箭头图标16×16，细线1px",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#CCCCCCFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 58,
+          "tag": "div",
+          "rect": { "x": 20, "y": 712, "w": 335, "h": 48 },
+          "layerType": "frame",
+          "layerName": "退出登录卡片",
+          "layerDescription": "退出登录操作卡片，白色背景，12px圆角，居中放置红色文字退出登录，点击弹出确认对话框",
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "backgroundColor": "#FFFFFFFF",
+            "borderRadius": "12px",
+            "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)"
+          },
+          "children": [
+            {
+              "nid": 59,
+              "tag": "span",
+              "rect": { "x": 147.5, "y": 724, "w": 80, "h": 24 },
+              "layerType": "text",
+              "layerName": "红色退出文字",
+              "layerDescription": "'退出登录'操作文字，16px字号，红色表示危险操作，点击后弹出二次确认弹窗",
+              "text": "退出登录",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FF4D4FFF",
+                "textAlign": "center"
+              }
+            }
+          ]
+        },
+        {
+          "nid": 60,
+          "tag": "span",
+          "rect": { "x": 20, "y": 776, "w": 335, "h": 24 },
+          "layerType": "text",
+          "layerName": "页面版本标识",
+          "layerDescription": "页面底部版本标识文字'© 2024 AppName'，12px浅灰色居中显示，位于底部固定间距",
+          "text": "© 2024 AppName",
+          "style": {
+            "fontSize": "12px",
+            "color": "#CCCCCCFF",
+            "textAlign": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

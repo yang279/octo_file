@@ -1,0 +1,230 @@
+{
+  "nid": 1,
+  "tag": "div",
+  "rect": { "x": 0, "y": 0, "w": 375, "h": 812 },
+  "layerType": "frame",
+  "layerName": "登录页根容器",
+  "layerDescription": "移动端个人登录页的根布局容器，宽度375px，高度812px，浅灰色背景，纵向排列顶部视觉区、表单卡片、社交登录区和底部注册提示",
+  "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "#F5F5F5FF" },
+  "children": [
+    {
+      "nid": 2,
+      "tag": "section",
+      "rect": { "x": 0, "y": 0, "w": 375, "h": 248 },
+      "layerType": "frame",
+      "layerName": "顶部视觉区",
+      "layerDescription": "页面顶部的视觉焦点区域，纵向排列个人头像、欢迎标题和副标题，占据画布上三分之一空间",
+      "style": { "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "flex-end" },
+      "children": [
+        {
+          "nid": 3,
+          "tag": "div",
+          "rect": { "x": 152, "y": 96, "w": 72, "h": 72 },
+          "layerType": "component",
+          "layerName": "个人头像",
+          "layerDescription": "居中显示的圆形头像占位符，直径72px，浅灰色背景，代表用户个人形象",
+          "style": { "borderRadius": "36px", "backgroundColor": "#E5E5E5FF" }
+        },
+        {
+          "nid": 4,
+          "tag": "h1",
+          "rect": { "x": 20, "y": 188, "w": 335, "h": 28 },
+          "layerType": "text",
+          "layerName": "欢迎回来标题",
+          "layerDescription": "页面主标题文字，粗体24px，深色，居中显示欢迎信息",
+          "style": { "fontSize": "24px", "fontWeight": "700", "color": "#1A1A1AFF", "textAlign": "center" },
+          "text": "欢迎回来"
+        },
+        {
+          "nid": 5,
+          "tag": "p",
+          "rect": { "x": 20, "y": 220, "w": 335, "h": 20 },
+          "layerType": "text",
+          "layerName": "登录后继续使用提示",
+          "layerDescription": "副标题文字，14px浅灰色，居中提示用户登录目的",
+          "style": { "fontSize": "14px", "color": "#999999FF", "textAlign": "center" },
+          "text": "登录以继续使用"
+        }
+      ]
+    },
+    {
+      "nid": 6,
+      "tag": "form",
+      "rect": { "x": 20, "y": 272, "w": 335, "h": 320 },
+      "layerType": "frame",
+      "layerName": "登录表单卡片",
+      "layerDescription": "白色背景登录表单卡片，宽度335px，带12px圆角和中度阴影，纵向排列输入框、忘记密码链接和登录按钮",
+      "style": { "display": "flex", "flexDirection": "column", "gap": "16px", "backgroundColor": "#FFFFFFFF", "borderRadius": "12px", "boxShadow": "0px 8px 24px rgba(0,0,0,0.1)" },
+      "children": [
+        {
+          "nid": 7,
+          "tag": "div",
+          "rect": { "x": 40, "y": 292, "w": 295, "h": 48 },
+          "layerType": "component",
+          "layerName": "邮箱手机号输入框",
+          "layerDescription": "邮箱或手机号输入框组件，宽度295px，高度48px，浅灰色边框8px圆角，左侧内嵌邮件图标，提示文字灰色",
+          "style": { "display": "flex", "alignItems": "center", "gap": "8px", "backgroundColor": "#FAFAFAFF", "border": "1px solid #E5E5E5FF", "borderRadius": "8px", "padding": "0 16px" },
+          "children": [
+            {
+              "nid": 8,
+              "tag": "span",
+              "rect": { "x": 52, "y": 304, "w": 20, "h": 20 },
+              "layerType": "icon",
+              "layerName": "邮件图标",
+              "layerDescription": "邮箱输入标识图标，20×20，浅灰色线条1.5px粗细",
+              "style": { "fontSize": "20px" }
+            },
+            {
+              "nid": 9,
+              "tag": "span",
+              "rect": { "x": 88, "y": 306, "w": 227, "h": 22 },
+              "layerType": "text",
+              "layerName": "邮箱手机号提示文字",
+              "layerDescription": "输入框占位提示文字，14px浅灰色，提示用户输入邮箱或手机号",
+              "style": { "fontSize": "14px", "color": "#999999FF" },
+              "text": "请输入邮箱或手机号"
+            }
+          ]
+        },
+        {
+          "nid": 10,
+          "tag": "div",
+          "rect": { "x": 40, "y": 356, "w": 295, "h": 48 },
+          "layerType": "component",
+          "layerName": "密码输入框",
+          "layerDescription": "密码输入框组件，宽度295px，高度48px，浅灰色边框8px圆角，左侧锁形图标，右侧密码可见切换眼睛图标",
+          "style": { "display": "flex", "alignItems": "center", "gap": "8px", "backgroundColor": "#FAFAFAFF", "border": "1px solid #E5E5E5FF", "borderRadius": "8px", "padding": "0 16px" },
+          "children": [
+            {
+              "nid": 11,
+              "tag": "span",
+              "rect": { "x": 52, "y": 368, "w": 20, "h": 20 },
+              "layerType": "icon",
+              "layerName": "锁形图标",
+              "layerDescription": "密码输入标识图标，20×20，浅灰色线条1.5px粗细",
+              "style": { "fontSize": "20px" }
+            },
+            {
+              "nid": 12,
+              "tag": "span",
+              "rect": { "x": 88, "y": 370, "w": 140, "h": 22 },
+              "layerType": "text",
+              "layerName": "密码提示文字",
+              "layerDescription": "密码输入框占位提示文字，14px浅灰色",
+              "style": { "fontSize": "14px", "color": "#999999FF" },
+              "text": "请输入密码"
+            },
+            {
+              "nid": 13,
+              "tag": "span",
+              "rect": { "x": 307, "y": 368, "w": 20, "h": 20 },
+              "layerType": "icon",
+              "layerName": "密码可见切换眼睛图标",
+              "layerDescription": "密码明文/密文切换图标，20×20，浅灰色线条1.5px粗细，点击切换密码显示状态",
+              "style": { "fontSize": "20px" }
+            }
+          ]
+        },
+        {
+          "nid": 14,
+          "tag": "a",
+          "rect": { "x": 215, "y": 412, "w": 120, "h": 16 },
+          "layerType": "text",
+          "layerName": "忘记密码链接",
+          "layerDescription": "靠右对齐的忘记密码链接文字，12px蓝色主色，点击跳转密码重置页面",
+          "style": { "fontSize": "12px", "color": "#3478F6FF", "textAlign": "right" },
+          "text": "忘记密码？"
+        },
+        {
+          "nid": 15,
+          "tag": "button",
+          "rect": { "x": 40, "y": 436, "w": 295, "h": 48 },
+          "layerType": "component",
+          "layerName": "登录按钮",
+          "layerDescription": "主操作登录按钮，全宽295px，高度48px，蓝色背景白色文字，12px大圆角，点击提交表单验证并显示加载状态",
+          "style": { "display": "flex", "alignItems": "center", "justifyContent": "center", "backgroundColor": "#3478F6FF", "borderRadius": "12px", "fontSize": "16px", "fontWeight": "600", "color": "#FFFFFFFF" },
+          "text": "登录"
+        }
+      ]
+    },
+    {
+      "nid": 16,
+      "tag": "section",
+      "rect": { "x": 20, "y": 612, "w": 335, "h": 72 },
+      "layerType": "frame",
+      "layerName": "社交登录区",
+      "layerDescription": "第三方社交登录区域，纵向排列分割线文字和三个社交图标按钮（微信、Apple、Google），图标按钮40px圆形等间距横向排列",
+      "style": { "display": "flex", "flexDirection": "column", "gap": "12px" },
+      "children": [
+        {
+          "nid": 17,
+          "tag": "div",
+          "rect": { "x": 20, "y": 612, "w": 335, "h": 20 },
+          "layerType": "text",
+          "layerName": "社交登录分割线文字",
+          "layerDescription": "居中的分割线提示文字，12px灰色，左右带横线装饰，提示用户可使用其他方式登录",
+          "style": { "fontSize": "12px", "color": "#999999FF", "textAlign": "center" },
+          "text": "或使用以下方式登录"
+        },
+        {
+          "nid": 18,
+          "tag": "button",
+          "rect": { "x": 97, "y": 644, "w": 40, "h": 40 },
+          "layerType": "component",
+          "layerName": "微信登录图标按钮",
+          "layerDescription": "微信第三方登录按钮，40px圆形，绿色背景，点击唤起微信授权，内含24×24白色微信图标",
+          "style": { "borderRadius": "20px", "backgroundColor": "#07C160FF" }
+        },
+        {
+          "nid": 19,
+          "tag": "button",
+          "rect": { "x": 167, "y": 644, "w": 40, "h": 40 },
+          "layerType": "component",
+          "layerName": "Apple登录图标按钮",
+          "layerDescription": "Apple第三方登录按钮，40px圆形，深灰近黑背景，点击唤起Apple ID授权，内含24×24白色苹果图标",
+          "style": { "borderRadius": "20px", "backgroundColor": "#1A1A1AFF" }
+        },
+        {
+          "nid": 20,
+          "tag": "button",
+          "rect": { "x": 237, "y": 644, "w": 40, "h": 40 },
+          "layerType": "component",
+          "layerName": "Google登录图标按钮",
+          "layerDescription": "Google第三方登录按钮，40px圆形，白色背景带浅灰边框，点击唤起Google账号授权，内含24×24彩色Google图标",
+          "style": { "borderRadius": "20px", "backgroundColor": "#FFFFFFFF", "border": "1px solid #E5E5E5FF" }
+        }
+      ]
+    },
+    {
+      "nid": 21,
+      "tag": "footer",
+      "rect": { "x": 0, "y": 700, "w": 375, "h": 112 },
+      "layerType": "frame",
+      "layerName": "底部注册提示区",
+      "layerDescription": "页面底部居中的注册提示区域，纵向排列注册引导文字链接和服务条款隐私政策声明文字",
+      "style": { "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "8px" },
+      "children": [
+        {
+          "nid": 22,
+          "tag": "div",
+          "rect": { "x": 20, "y": 700, "w": 335, "h": 24 },
+          "layerType": "text",
+          "layerName": "无账号立即注册提示",
+          "layerDescription": "注册引导链接文字，14px灰色，其中立即注册部分为蓝色可点击链接，点击跳转注册页面",
+          "style": { "fontSize": "14px", "color": "#666666FF", "textAlign": "center" },
+          "text": "还没有账号？立即注册"
+        },
+        {
+          "nid": 23,
+          "tag": "p",
+          "rect": { "x": 20, "y": 732, "w": 335, "h": 28 },
+          "layerType": "text",
+          "layerName": "服务条款与隐私政策声明",
+          "layerDescription": "底部法律声明文字，11px极小号灰色文字，居中排列，提示用户登录即表示同意服务条款和隐私政策，其中服务条款和隐私政策为蓝色可点击链接",
+          "style": { "fontSize": "11px", "color": "#999999FF", "textAlign": "center", "lineHeight": "14px" },
+          "text": "登录后即表示您同意《服务条款》和《隐私政策》"
+        }
+      ]
+    }
+  ]
+}
