@@ -1,0 +1,489 @@
+{
+  "nid": 1,
+  "tag": "div",
+  "rect": {"x": 0, "y": 0, "w": 1440, "h": 900},
+  "layerType": "frame",
+  "layerName": "个人设置页根容器",
+  "layerDescription": "桌面端个人设置页面的根布局容器，浅灰蓝色背景，采用左侧导航栏+右侧内容区双栏结构",
+  "style": {"backgroundColor": "#F0F4F8FF"},
+  "children": [
+    {
+      "nid": 2,
+      "tag": "div",
+      "rect": {"x": 40, "y": 40, "w": 320, "h": 820},
+      "layerType": "frame",
+      "layerName": "左侧导航栏",
+      "layerDescription": "固定在页面左侧的白色圆角卡片导航栏，包含用户信息展示区和设置分类菜单列表",
+      "style": {"display": "flex", "flexDirection": "column", "backgroundColor": "#FFFFFFFF", "borderRadius": "16px", "boxShadow": "0px 8px 24px rgba(0,0,0,0.08)", "padding": "24px"},
+      "children": [
+        {
+          "nid": 3,
+          "tag": "div",
+          "rect": {"x": 64, "y": 64, "w": 272, "h": 100},
+          "layerType": "frame",
+          "layerName": "用户信息区",
+          "layerDescription": "顶部用户信息展示区，居中显示圆形头像和用户名",
+          "style": {"display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "8px"},
+          "children": [
+            {
+              "nid": 4,
+              "tag": "img",
+              "rect": {"x": 160, "y": 64, "w": 80, "h": 80},
+              "layerType": "image",
+              "layerName": "用户头像",
+              "layerDescription": "圆形用户头像，带有粉紫渐变边框装饰，80×80",
+              "style": {"borderRadius": "40px", "border": "3px solid #FF8FB1FF", "objectFit": "cover"}
+            },
+            {
+              "nid": 5,
+              "tag": "span",
+              "rect": {"x": 64, "y": 156, "w": 272, "h": 24},
+              "layerType": "text",
+              "layerName": "用户昵称",
+              "layerDescription": "当前登录用户的昵称文字，居中显示",
+              "style": {"fontSize": "16px", "fontWeight": "600", "color": "#1A1A1AFF", "textAlign": "center"},
+              "text": "林小北"
+            }
+          ]
+        },
+        {
+          "nid": 6,
+          "tag": "div",
+          "rect": {"x": 64, "y": 180, "w": 272, "h": 1},
+          "layerType": "frame",
+          "layerName": "导航分割线",
+          "layerDescription": "分隔用户信息区和菜单列表的浅灰色细线",
+          "style": {"backgroundColor": "#E5E5E5FF"}
+        },
+        {
+          "nid": 7,
+          "tag": "div",
+          "rect": {"x": 64, "y": 200, "w": 272, "h": 420},
+          "layerType": "frame",
+          "layerName": "设置菜单列表",
+          "layerDescription": "设置分类菜单项列表，纵向排列共7项，选中项带浅蓝背景高亮",
+          "style": {"display": "flex", "flexDirection": "column", "gap": "8px"},
+          "children": [
+            {
+              "nid": 8,
+              "tag": "div",
+              "rect": {"x": 64, "y": 200, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "个人资料菜单项",
+              "layerDescription": "当前选中状态的菜单项，带浅蓝底色高亮，表示正在查看个人资料设置",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "backgroundColor": "#E8F0FEFF", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 9,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 212, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "个人资料图标",
+                  "layerDescription": "人物头像图标，24×24，蓝色填充",
+                  "style": {"color": "#3478F6FF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 10,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 212, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "个人资料文字",
+                  "layerDescription": "菜单项文字标签，加粗蓝色表示选中",
+                  "style": {"fontSize": "14px", "fontWeight": "600", "color": "#3478F6FF"},
+                  "text": "个人资料"
+                }
+              ]
+            },
+            {
+              "nid": 11,
+              "tag": "div",
+              "rect": {"x": 64, "y": 256, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "账号安全菜单项",
+              "layerDescription": "未选中状态菜单项，点击切换至账号安全设置面板",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 12,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 268, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "账号安全图标",
+                  "layerDescription": "盾牌锁图标，24×24，绿色填充",
+                  "style": {"color": "#10B981FF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 13,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 268, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "账号安全文字",
+                  "layerDescription": "菜单项文字标签，深灰色",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "账号安全"
+                }
+              ]
+            },
+            {
+              "nid": 14,
+              "tag": "div",
+              "rect": {"x": 64, "y": 312, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "通知偏好菜单项",
+              "layerDescription": "未选中状态菜单项，点击切换至通知偏好设置面板",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 15,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 324, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "通知偏好图标",
+                  "layerDescription": "铃铛图标，24×24，橙色填充",
+                  "style": {"color": "#F59E0BFF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 16,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 324, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "通知偏好文字",
+                  "layerDescription": "菜单项文字标签",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "通知偏好"
+                }
+              ]
+            },
+            {
+              "nid": 17,
+              "tag": "div",
+              "rect": {"x": 64, "y": 368, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "隐私设置菜单项",
+              "layerDescription": "未选中状态菜单项，点击切换至隐私设置面板",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 18,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 380, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "隐私设置图标",
+                  "layerDescription": "眼睛图标，24×24，紫色填充",
+                  "style": {"color": "#9D5CB5FF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 19,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 380, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "隐私设置文字",
+                  "layerDescription": "菜单项文字标签",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "隐私设置"
+                }
+              ]
+            },
+            {
+              "nid": 20,
+              "tag": "div",
+              "rect": {"x": 64, "y": 424, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "主题外观菜单项",
+              "layerDescription": "未选中状态菜单项，点击切换至主题外观设置面板",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 21,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 436, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "主题外观图标",
+                  "layerDescription": "调色板图标，24×24，粉色填充",
+                  "style": {"color": "#EC4899FF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 22,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 436, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "主题外观文字",
+                  "layerDescription": "菜单项文字标签",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "主题外观"
+                }
+              ]
+            },
+            {
+              "nid": 23,
+              "tag": "div",
+              "rect": {"x": 64, "y": 480, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "语言与地区菜单项",
+              "layerDescription": "未选中状态菜单项，点击切换至语言设置面板",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 24,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 492, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "语言图标",
+                  "layerDescription": "地球/语言图标，24×24，青色填充",
+                  "style": {"color": "#14B8A6FF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 25,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 492, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "语言与地区文字",
+                  "layerDescription": "菜单项文字标签",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "语言与地区"
+                }
+              ]
+            },
+            {
+              "nid": 26,
+              "tag": "div",
+              "rect": {"x": 64, "y": 536, "w": 272, "h": 48},
+              "layerType": "frame",
+              "layerName": "关于我们菜单项",
+              "layerDescription": "未选中状态菜单项，点击切换至关于页面",
+              "style": {"display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "12px", "padding": "12px 16px"},
+              "children": [
+                {
+                  "nid": 27,
+                  "tag": "span",
+                  "rect": {"x": 80, "y": 548, "w": 24, "h": 24},
+                  "layerType": "icon",
+                  "layerName": "关于图标",
+                  "layerDescription": "信息/问号图标，24×24，灰色填充",
+                  "style": {"color": "#9CA3AFFF", "fontSize": "24px"}
+                },
+                {
+                  "nid": 28,
+                  "tag": "span",
+                  "rect": {"x": 116, "y": 548, "w": 120, "h": 24},
+                  "layerType": "text",
+                  "layerName": "关于我们文字",
+                  "layerDescription": "菜单项文字标签",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "关于我们"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nid": 29,
+      "tag": "div",
+      "rect": {"x": 380, "y": 40, "w": 1020, "h": 820},
+      "layerType": "frame",
+      "layerName": "右侧内容区",
+      "layerDescription": "显示当前选中设置分区的表单内容，白色圆角卡片背景，带轻微阴影",
+      "style": {"display": "flex", "flexDirection": "column", "backgroundColor": "#FFFFFFFF", "borderRadius": "16px", "boxShadow": "0px 8px 24px rgba(0,0,0,0.08)", "padding": "32px"},
+      "children": [
+        {
+          "nid": 30,
+          "tag": "div",
+          "rect": {"x": 412, "y": 72, "w": 956, "h": 40},
+          "layerType": "frame",
+          "layerName": "内容区标题",
+          "layerDescription": "当前分区的标题栏，显示分区名称",
+          "style": {"display": "flex", "alignItems": "center"},
+          "children": [
+            {
+              "nid": 31,
+              "tag": "span",
+              "rect": {"x": 412, "y": 72, "w": 200, "h": 40},
+              "layerType": "text",
+              "layerName": "分区标题文字",
+              "layerDescription": "当前分区名称，大号粗体字显示",
+              "style": {"fontSize": "24px", "fontWeight": "700", "color": "#1A1A1AFF"},
+              "text": "个人资料"
+            }
+          ]
+        },
+        {
+          "nid": 32,
+          "tag": "div",
+          "rect": {"x": 412, "y": 144, "w": 956, "h": 400},
+          "layerType": "frame",
+          "layerName": "表单内容区",
+          "layerDescription": "个人资料编辑表单区域，纵向排列头像编辑、昵称输入和个人简介输入",
+          "style": {"display": "flex", "flexDirection": "column", "gap": "32px"},
+          "children": [
+            {
+              "nid": 33,
+              "tag": "div",
+              "rect": {"x": 412, "y": 144, "w": 956, "h": 80},
+              "layerType": "frame",
+              "layerName": "头像编辑行",
+              "layerDescription": "横向排列的头像展示和更换按钮区域",
+              "style": {"display": "flex", "alignItems": "center", "gap": "24px"},
+              "children": [
+                {
+                  "nid": 34,
+                  "tag": "img",
+                  "rect": {"x": 412, "y": 144, "w": 80, "h": 80},
+                  "layerType": "image",
+                  "layerName": "大尺寸头像",
+                  "layerDescription": "当前用户头像放大显示，圆形，80×80",
+                  "style": {"borderRadius": "40px", "objectFit": "cover", "backgroundColor": "#F3F4F6FF"}
+                },
+                {
+                  "nid": 35,
+                  "tag": "button",
+                  "rect": {"x": 516, "y": 156, "w": 120, "h": 40},
+                  "layerType": "component",
+                  "layerName": "更换头像按钮",
+                  "layerDescription": "点击打开文件选择器更换用户头像，蓝色文字无边框",
+                  "style": {"backgroundColor": "#3478F6FF", "color": "#FFFFFFFF", "borderRadius": "20px", "border": "none", "fontSize": "14px", "fontWeight": "500"},
+                  "text": "更换头像"
+                }
+              ]
+            },
+            {
+              "nid": 36,
+              "tag": "div",
+              "rect": {"x": 412, "y": 256, "w": 956, "h": 80},
+              "layerType": "frame",
+              "layerName": "昵称输入行",
+              "layerDescription": "昵称编辑表单项，包含标签和输入框",
+              "style": {"display": "flex", "flexDirection": "column", "gap": "8px"},
+              "children": [
+                {
+                  "nid": 37,
+                  "tag": "span",
+                  "rect": {"x": 412, "y": 256, "w": 80, "h": 20},
+                  "layerType": "text",
+                  "layerName": "昵称标签",
+                  "layerDescription": "表单项标签文字",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "昵称"
+                },
+                {
+                  "nid": 38,
+                  "tag": "input",
+                  "rect": {"x": 412, "y": 284, "w": 956, "h": 44},
+                  "layerType": "component",
+                  "layerName": "昵称输入框",
+                  "layerDescription": "可编辑的昵称输入框，点击聚焦时显示蓝色边框",
+                  "style": {"backgroundColor": "#F9FAFBFF", "border": "1px solid #E5E5E5FF", "borderRadius": "8px", "padding": "0 12px", "fontSize": "15px", "color": "#1A1A1AFF"},
+                  "attrs": {"value": "林小北", "type": "text"}
+                }
+              ]
+            },
+            {
+              "nid": 39,
+              "tag": "div",
+              "rect": {"x": 412, "y": 368, "w": 956, "h": 120},
+              "layerType": "frame",
+              "layerName": "个人简介行",
+              "layerDescription": "个人简介编辑表单项，包含标签和多行文本框",
+              "style": {"display": "flex", "flexDirection": "column", "gap": "8px"},
+              "children": [
+                {
+                  "nid": 40,
+                  "tag": "span",
+                  "rect": {"x": 412, "y": 368, "w": 80, "h": 20},
+                  "layerType": "text",
+                  "layerName": "简介标签",
+                  "layerDescription": "表单项标签文字",
+                  "style": {"fontSize": "14px", "fontWeight": "500", "color": "#666666FF"},
+                  "text": "个人简介"
+                },
+                {
+                  "nid": 41,
+                  "tag": "textarea",
+                  "rect": {"x": 412, "y": 396, "w": 956, "h": 80},
+                  "layerType": "component",
+                  "layerName": "个人简介文本框",
+                  "layerDescription": "多行文本编辑区，用于输入个人介绍，带占位提示",
+                  "style": {"backgroundColor": "#F9FAFBFF", "border": "1px solid #E5E5E5FF", "borderRadius": "8px", "padding": "12px", "fontSize": "14px", "color": "#999999FF", "lineHeight": "22px", "resize": "none"},
+                  "text": "写点什么介绍自己吧~"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 42,
+          "tag": "div",
+          "rect": {"x": 412, "y": 600, "w": 956, "h": 228},
+          "layerType": "frame",
+          "layerName": "底部操作区",
+          "layerDescription": "页面底部操作区域，包含分隔线、左侧危险操作按钮和右侧保存按钮",
+          "style": {"display": "flex", "flexDirection": "column", "gap": "24px"},
+          "children": [
+            {
+              "nid": 43,
+              "tag": "div",
+              "rect": {"x": 412, "y": 600, "w": 956, "h": 1},
+              "layerType": "frame",
+              "layerName": "操作区分割线",
+              "layerDescription": "分隔表单内容和底部操作按钮的浅灰色细线",
+              "style": {"backgroundColor": "#E5E5E5FF"}
+            },
+            {
+              "nid": 44,
+              "tag": "div",
+              "rect": {"x": 412, "y": 632, "w": 956, "h": 48},
+              "layerType": "frame",
+              "layerName": "按钮行",
+              "layerDescription": "横向排列的操作按钮，左侧为清除缓存和退出登录，右侧为保存修改",
+              "style": {"display": "flex", "justifyContent": "space-between"},
+              "children": [
+                {
+                  "nid": 45,
+                  "tag": "div",
+                  "rect": {"x": 412, "y": 632, "w": 256, "h": 48},
+                  "layerType": "frame",
+                  "layerName": "左侧按钮组",
+                  "layerDescription": "辅助操作按钮组，包含清除缓存和退出登录",
+                  "style": {"display": "flex", "gap": "16px"},
+                  "children": [
+                    {
+                      "nid": 46,
+                      "tag": "button",
+                      "rect": {"x": 412, "y": 632, "w": 120, "h": 48},
+                      "layerType": "component",
+                      "layerName": "清除缓存按钮",
+                      "layerDescription": "点击弹出确认弹窗清除应用缓存数据，灰色背景",
+                      "style": {"backgroundColor": "#F3F4F6FF", "color": "#666666FF", "borderRadius": "8px", "border": "none", "fontSize": "14px", "fontWeight": "500"},
+                      "text": "清除缓存"
+                    },
+                    {
+                      "nid": 47,
+                      "tag": "button",
+                      "rect": {"x": 548, "y": 632, "w": 120, "h": 48},
+                      "layerType": "component",
+                      "layerName": "退出登录按钮",
+                      "layerDescription": "点击弹出确认弹窗退出当前登录，红色边框警示样式",
+                      "style": {"backgroundColor": "#FFFFFFFF", "color": "#EF4444FF", "borderRadius": "8px", "border": "1px solid #EF4444FF", "fontSize": "14px", "fontWeight": "500"},
+                      "text": "退出登录"
+                    }
+                  ]
+                },
+                {
+                  "nid": 48,
+                  "tag": "button",
+                  "rect": {"x": 1248, "y": 632, "w": 120, "h": 48},
+                  "layerType": "component",
+                  "layerName": "保存修改按钮",
+                  "layerDescription": "点击保存当前表单修改，蓝紫渐变背景白色文字，悬停有微动效",
+                  "style": {"backgroundColor": "#3478F6FF", "backgroundImage": "linear-gradient(135deg, #3478F6FF 0%, #9D5CB5FF 100%)", "color": "#FFFFFFFF", "borderRadius": "8px", "border": "none", "fontSize": "14px", "fontWeight": "600", "boxShadow": "0px 4px 12px rgba(52,120,246,0.3)"},
+                  "text": "保存修改"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

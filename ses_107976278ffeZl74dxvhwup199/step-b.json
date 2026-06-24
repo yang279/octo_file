@@ -1,0 +1,1078 @@
+{
+  "nid": 1,
+  "tag": "div",
+  "rect": { "x": 0, "y": 0, "w": 375, "h": 812 },
+  "id": "settingsPage",
+  "layerType": "frame",
+  "layerName": "设置页根容器",
+  "layerDescription": "移动端个人设置页面根容器，浅灰背景#F5F5F5，内部纵向滚动堆叠固定导航栏、个人信息卡片、多组设置卡片和底部退出登录按钮",
+  "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "rgb(245,245,245,1)" },
+  "children": [
+    {
+      "nid": 2,
+      "tag": "header",
+      "rect": { "x": 0, "y": 0, "w": 375, "h": 56, "fixed": true },
+      "id": "navBar",
+      "layerType": "frame",
+      "layerName": "顶部导航栏",
+      "layerDescription": "固定在页面顶部的导航栏，白色背景底部1px细线分隔，左侧返回箭头中间设置标题右侧留空",
+      "style": { "display": "flex", "alignItems": "center", "justifyContent": "center", "position": "fixed", "top": "0px", "zIndex": "100", "backgroundColor": "rgb(255,255,255,1)", "boxShadow": "0px 1px 0px rgb(229,229,229,1)" },
+      "children": [
+        {
+          "nid": 3,
+          "tag": "span",
+          "rect": { "x": 16, "y": 16, "w": 24, "h": 24 },
+          "layerType": "icon",
+          "layerName": "返回箭头图标",
+          "layerDescription": "返回箭头图标，24×24，细线1px深灰色#1A1A1A，点击返回上一页",
+          "style": { "fontSize": "24px", "color": "rgb(26,26,26,1)" },
+          "text": "←"
+        },
+        {
+          "nid": 4,
+          "tag": "div",
+          "rect": { "x": 153.5, "y": 16, "w": 68, "h": 24 },
+          "layerType": "text",
+          "layerName": "设置标题",
+          "layerDescription": "页面标题文字设置，居中显示，18px粗体深灰色",
+          "style": { "fontSize": "18px", "fontWeight": "600", "color": "rgb(26,26,26,1)", "lineHeight": "24px", "textAlign": "center" },
+          "text": "设置"
+        }
+      ]
+    },
+    {
+      "nid": 5,
+      "tag": "div",
+      "rect": { "x": 0, "y": 56, "w": 375, "h": 756 },
+      "layerType": "frame",
+      "layerName": "内容滚动区",
+      "layerDescription": "可纵向滚动的内容区域，内边距上下12px左右20px，包含个人信息、5个设置分组和退出登录按钮，flex纵向排列间距12px",
+      "style": { "display": "flex", "flexDirection": "column", "gap": "12px", "padding": "12px 20px 24px 20px" },
+      "children": [
+        {
+          "nid": 6,
+          "tag": "div",
+          "rect": { "x": 20, "y": 68, "w": 335, "h": 76 },
+          "layerType": "frame",
+          "layerName": "个人信息卡片",
+          "layerDescription": "白色圆角卡片，浅阴影，flex横向排列，左侧44px圆形头像中间昵称和ID右侧进入资料编辑箭头，内边距16px间距12px",
+          "style": { "display": "flex", "alignItems": "center", "justifyContent": "space-between", "gap": "12px", "padding": "16px", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "12px", "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)" },
+          "children": [
+            {
+              "nid": 7,
+              "tag": "div",
+              "rect": { "x": 36, "y": 84, "w": 44, "h": 44 },
+              "layerType": "image",
+              "layerName": "用户头像圆形占位",
+              "layerDescription": "圆形用户头像占位区，44×44可点击更换头像，浅灰背景居中显示灰色用户图标",
+              "style": { "borderRadius": "22px", "backgroundColor": "rgb(245,245,245,1)", "display": "flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" },
+              "children": [
+                {
+                  "nid": 8,
+                  "tag": "span",
+                  "rect": { "x": 48, "y": 96, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "头像默认占位图标",
+                  "layerDescription": "用户头像默认占位人像图标，20×20中灰#999",
+                  "style": { "fontSize": "20px", "color": "rgb(153,153,153,1)" },
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "nid": 9,
+              "tag": "div",
+              "rect": { "x": 92, "y": 76, "w": 155, "h": 40 },
+              "layerType": "frame",
+              "layerName": "用户昵称和ID文字区",
+              "layerDescription": "垂直堆叠的用户昵称18px粗体和用户ID12px灰色文字，间距4px，可伸缩占满中间区域",
+              "style": { "display": "flex", "flexDirection": "column", "gap": "4px", "flexGrow": "1" },
+              "children": [
+                {
+                  "nid": 10,
+                  "tag": "div",
+                  "rect": { "x": 92, "y": 76, "w": 60, "h": 22 },
+                  "layerType": "text",
+                  "layerName": "用户昵称张三",
+                  "layerDescription": "用户显示名称张三，18px粗体深灰色",
+                  "style": { "fontSize": "18px", "fontWeight": "600", "color": "rgb(26,26,26,1)", "lineHeight": "22px" },
+                  "text": "张三"
+                },
+                {
+                  "nid": 11,
+                  "tag": "div",
+                  "rect": { "x": 92, "y": 100, "w": 90, "h": 16 },
+                  "layerType": "text",
+                  "layerName": "用户ID显示",
+                  "layerDescription": "用户ID标识，12px辅助灰色文字",
+                  "style": { "fontSize": "12px", "color": "rgb(153,153,153,1)", "lineHeight": "16px" },
+                  "text": "ID: 10086"
+                }
+              ]
+            },
+            {
+              "nid": 12,
+              "tag": "span",
+              "rect": { "x": 315, "y": 94, "w": 12, "h": 14 },
+              "layerType": "icon",
+              "layerName": "进入资料编辑向右箭头",
+              "layerDescription": "向右箭头图标，12×14浅灰#999，引导用户点击进入个人资料编辑页",
+              "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0" },
+              "text": "›"
+            }
+          ]
+        },
+        {
+          "nid": 13,
+          "tag": "div",
+          "rect": { "x": 20, "y": 156, "w": 335, "h": 18 },
+          "layerType": "text",
+          "layerName": "账号与安全分组标题",
+          "layerDescription": "分组标题文字账号与安全，14px中等粗体中灰色，上方留白12px",
+          "style": { "fontSize": "14px", "fontWeight": "500", "color": "rgb(102,102,102,1)", "lineHeight": "18px", "paddingLeft": "4px" },
+          "text": "账号与安全"
+        },
+        {
+          "nid": 14,
+          "tag": "div",
+          "rect": { "x": 20, "y": 174, "w": 335, "h": 144 },
+          "layerType": "frame",
+          "layerName": "账号与安全设置卡片",
+          "layerDescription": "白色圆角卡片包含手机号修改密码账号绑定三个列表项，每项48px高横向排列，之间用极浅灰分割线分隔，内边距左右16px",
+          "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "12px", "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)" },
+          "children": [
+            {
+              "nid": 15,
+              "tag": "div",
+              "rect": { "x": 20, "y": 174, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "手机号设置项",
+              "layerDescription": "手机号列表项，flex横向排列，左侧手机图标中间标签文字右侧已绑定手机号灰色和右箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 16,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 184, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "手机图标",
+                  "layerDescription": "手机设备图标，20×20中灰#666，表示手机号设置",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "📱"
+                },
+                {
+                  "nid": 17,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 174, "w": 60, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "手机号标签",
+                  "layerDescription": "手机号设置项标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "手机号"
+                },
+                {
+                  "nid": 18,
+                  "tag": "div",
+                  "rect": { "x": 116, "y": 174, "w": 100, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "已绑定手机号",
+                  "layerDescription": "显示已脱敏绑定的手机号138****8888，14px中灰色右对齐",
+                  "style": { "fontSize": "14px", "color": "rgb(102,102,102,1)", "lineHeight": "48px", "textAlign": "right", "flexGrow": "1" },
+                  "text": "138****8888"
+                },
+                {
+                  "nid": 19,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 185, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "手机号进入箭头",
+                  "layerDescription": "向右箭头图标12×14浅灰，点击进入修改手机号页面",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            },
+            {
+              "nid": 20,
+              "tag": "div",
+              "rect": { "x": 20, "y": 222, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "手机号与密码分割线",
+              "layerDescription": "账号与安全卡片内部分割线，极浅灰#F0F0F0，左边距44px避开图标",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 21,
+              "tag": "div",
+              "rect": { "x": 20, "y": 222.5, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "修改密码设置项",
+              "layerDescription": "修改密码列表项，左侧锁图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 22,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 232, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "密码锁图标",
+                  "layerDescription": "密码锁图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🔒"
+                },
+                {
+                  "nid": 23,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 222, "w": 64, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "修改密码标签",
+                  "layerDescription": "修改密码设置标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "修改密码"
+                },
+                {
+                  "nid": 24,
+                  "tag": "div",
+                  "rect": { "x": 120, "y": 222, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "密码项右侧占位",
+                  "layerDescription": "修改密码项右侧弹性占位空间",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 25,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 233, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "修改密码进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入修改密码页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            },
+            {
+              "nid": 26,
+              "tag": "div",
+              "rect": { "x": 20, "y": 270.5, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "密码与绑定分割线",
+              "layerDescription": "账号与安全卡片内部分割线，极浅灰，左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 27,
+              "tag": "div",
+              "rect": { "x": 20, "y": 271, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "账号绑定设置项",
+              "layerDescription": "账号绑定列表项，左侧链接图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 28,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 281, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "账号绑定链接图标",
+                  "layerDescription": "链接绑定图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🔗"
+                },
+                {
+                  "nid": 29,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 271, "w": 64, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "账号绑定标签",
+                  "layerDescription": "账号绑定设置标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "账号绑定"
+                },
+                {
+                  "nid": 30,
+                  "tag": "div",
+                  "rect": { "x": 120, "y": 271, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "绑定项右侧占位",
+                  "layerDescription": "账号绑定项右侧弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 31,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 282, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "账号绑定进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入账号绑定页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 32,
+          "tag": "div",
+          "rect": { "x": 20, "y": 330, "w": 335, "h": 18 },
+          "layerType": "text",
+          "layerName": "通知分组标题",
+          "layerDescription": "分组标题文字通知，14px中等粗体中灰色，上方留白12px",
+          "style": { "fontSize": "14px", "fontWeight": "500", "color": "rgb(102,102,102,1)", "lineHeight": "18px", "paddingLeft": "4px", "marginTop": "12px" },
+          "text": "通知"
+        },
+        {
+          "nid": 33,
+          "tag": "div",
+          "rect": { "x": 20, "y": 348, "w": 335, "h": 144 },
+          "layerType": "frame",
+          "layerName": "通知设置卡片",
+          "layerDescription": "白色圆角卡片包含推送通知声音提醒邮件通知三个开关列表项，每项48px高，之间用极浅灰分割线分隔",
+          "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "12px", "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)" },
+          "children": [
+            {
+              "nid": 34,
+              "tag": "div",
+              "rect": { "x": 20, "y": 348, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "推送通知设置项",
+              "layerDescription": "推送通知列表项，左侧铃铛图标中间文字右侧开启状态蓝色开关",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 35,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 358, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "推送通知铃铛图标",
+                  "layerDescription": "推送通知铃铛图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🔔"
+                },
+                {
+                  "nid": 36,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 348, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "推送通知标签",
+                  "layerDescription": "推送通知标签文字，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "推送通知"
+                },
+                {
+                  "nid": 37,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 348, "w": 134, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "推送通知右侧占位",
+                  "layerDescription": "推送通知项弹性占位将开关推到右侧",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 38,
+                  "tag": "div",
+                  "rect": { "x": 271, "y": 360, "w": 44, "h": 24 },
+                  "layerType": "component",
+                  "layerName": "推送通知开关控件",
+                  "layerDescription": "开关控件开启状态，主色蓝色#3478F6，宽44px高24px圆角12px，右侧白色滑块20×20",
+                  "style": { "display": "flex", "alignItems": "center", "justifyContent": "flex-end", "width": "44px", "height": "24px", "backgroundColor": "rgb(52,120,246,1)", "borderRadius": "12px", "padding": "2px", "flexShrink": "0" },
+                  "children": [
+                    {
+                      "nid": 39,
+                      "tag": "div",
+                      "rect": { "x": 293, "y": 362, "w": 20, "h": 20 },
+                      "layerType": "frame",
+                      "layerName": "推送开关白色滑块",
+                      "layerDescription": "开关白色圆形滑块20×20，带微阴影，位于右侧表示开启",
+                      "style": { "width": "20px", "height": "20px", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "10px", "boxShadow": "0px 1px 3px rgba(0,0,0,0.15)" }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nid": 40,
+              "tag": "div",
+              "rect": { "x": 20, "y": 396, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "推送与声音分割线",
+              "layerDescription": "通知卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 41,
+              "tag": "div",
+              "rect": { "x": 20, "y": 396.5, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "声音提醒设置项",
+              "layerDescription": "声音提醒列表项，左侧喇叭图标中间文字右侧关闭状态灰色开关",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 42,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 406, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "声音提醒喇叭图标",
+                  "layerDescription": "声音提醒喇叭图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🔊"
+                },
+                {
+                  "nid": 43,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 396, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "声音提醒标签",
+                  "layerDescription": "声音提醒标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "声音提醒"
+                },
+                {
+                  "nid": 44,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 396, "w": 134, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "声音项右侧占位",
+                  "layerDescription": "声音提醒项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 45,
+                  "tag": "div",
+                  "rect": { "x": 271, "y": 408, "w": 44, "h": 24 },
+                  "layerType": "component",
+                  "layerName": "声音提醒开关控件",
+                  "layerDescription": "开关控件关闭状态，浅灰#E5E5E5，宽44px高24px圆角12px，左侧白色滑块",
+                  "style": { "display": "flex", "alignItems": "center", "justifyContent": "flex-start", "width": "44px", "height": "24px", "backgroundColor": "rgb(229,229,229,1)", "borderRadius": "12px", "padding": "2px", "flexShrink": "0" },
+                  "children": [
+                    {
+                      "nid": 46,
+                      "tag": "div",
+                      "rect": { "x": 271, "y": 410, "w": 20, "h": 20 },
+                      "layerType": "frame",
+                      "layerName": "声音开关白色滑块",
+                      "layerDescription": "开关白色圆形滑块20×20带微阴影，位于左侧表示关闭",
+                      "style": { "width": "20px", "height": "20px", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "10px", "boxShadow": "0px 1px 3px rgba(0,0,0,0.15)" }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nid": 47,
+              "tag": "div",
+              "rect": { "x": 20, "y": 444.5, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "声音与邮件分割线",
+              "layerDescription": "通知卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 48,
+              "tag": "div",
+              "rect": { "x": 20, "y": 445, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "邮件通知设置项",
+              "layerDescription": "邮件通知列表项，左侧信封图标中间文字右侧关闭状态灰色开关",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 49,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 455, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "邮件通知信封图标",
+                  "layerDescription": "邮件通知信封图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "✉️"
+                },
+                {
+                  "nid": 50,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 445, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "邮件通知标签",
+                  "layerDescription": "邮件通知标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "邮件通知"
+                },
+                {
+                  "nid": 51,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 445, "w": 134, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "邮件项右侧占位",
+                  "layerDescription": "邮件通知项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 52,
+                  "tag": "div",
+                  "rect": { "x": 271, "y": 457, "w": 44, "h": 24 },
+                  "layerType": "component",
+                  "layerName": "邮件通知开关控件",
+                  "layerDescription": "开关控件关闭状态，浅灰#E5E5E5，宽44px高24px圆角12px，左侧白色滑块",
+                  "style": { "display": "flex", "alignItems": "center", "justifyContent": "flex-start", "width": "44px", "height": "24px", "backgroundColor": "rgb(229,229,229,1)", "borderRadius": "12px", "padding": "2px", "flexShrink": "0" },
+                  "children": [
+                    {
+                      "nid": 53,
+                      "tag": "div",
+                      "rect": { "x": 271, "y": 459, "w": 20, "h": 20 },
+                      "layerType": "frame",
+                      "layerName": "邮件开关白色滑块",
+                      "layerDescription": "开关白色圆形滑块20×20带微阴影，位于左侧表示关闭",
+                      "style": { "width": "20px", "height": "20px", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "10px", "boxShadow": "0px 1px 3px rgba(0,0,0,0.15)" }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 54,
+          "tag": "div",
+          "rect": { "x": 20, "y": 504, "w": 335, "h": 18 },
+          "layerType": "text",
+          "layerName": "隐私分组标题",
+          "layerDescription": "分组标题文字隐私，14px中等粗体中灰色，上方留白12px",
+          "style": { "fontSize": "14px", "fontWeight": "500", "color": "rgb(102,102,102,1)", "lineHeight": "18px", "paddingLeft": "4px", "marginTop": "12px" },
+          "text": "隐私"
+        },
+        {
+          "nid": 55,
+          "tag": "div",
+          "rect": { "x": 20, "y": 522, "w": 335, "h": 96 },
+          "layerType": "frame",
+          "layerName": "隐私设置卡片",
+          "layerDescription": "白色圆角卡片包含账号隐私黑名单管理两个列表项，每项48px高，之间用极浅灰分割线分隔",
+          "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "12px", "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)" },
+          "children": [
+            {
+              "nid": 56,
+              "tag": "div",
+              "rect": { "x": 20, "y": 522, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "账号隐私设置项",
+              "layerDescription": "账号隐私列表项，点击可设置谁可以看我的主页，左侧盾牌图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 57,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 532, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "隐私盾牌图标",
+                  "layerDescription": "隐私保护盾牌图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🛡️"
+                },
+                {
+                  "nid": 58,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 522, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "账号隐私标签",
+                  "layerDescription": "账号隐私标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "账号隐私"
+                },
+                {
+                  "nid": 59,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 522, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "隐私项右侧占位",
+                  "layerDescription": "账号隐私项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 60,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 533, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "账号隐私进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入隐私设置页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            },
+            {
+              "nid": 61,
+              "tag": "div",
+              "rect": { "x": 20, "y": 570, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "隐私与黑名单分割线",
+              "layerDescription": "隐私卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 62,
+              "tag": "div",
+              "rect": { "x": 20, "y": 570.5, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "黑名单管理设置项",
+              "layerDescription": "黑名单管理列表项，左侧禁止图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 63,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 580, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "黑名单禁止图标",
+                  "layerDescription": "黑名单管理禁止图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🚫"
+                },
+                {
+                  "nid": 64,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 570, "w": 88, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "黑名单管理标签",
+                  "layerDescription": "黑名单管理标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "黑名单管理"
+                },
+                {
+                  "nid": 65,
+                  "tag": "div",
+                  "rect": { "x": 144, "y": 570, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "黑名单项右侧占位",
+                  "layerDescription": "黑名单管理项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 66,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 581, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "黑名单管理进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入黑名单管理页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 67,
+          "tag": "div",
+          "rect": { "x": 20, "y": 630, "w": 335, "h": 18 },
+          "layerType": "text",
+          "layerName": "通用分组标题",
+          "layerDescription": "分组标题文字通用，14px中等粗体中灰色，上方留白12px",
+          "style": { "fontSize": "14px", "fontWeight": "500", "color": "rgb(102,102,102,1)", "lineHeight": "18px", "paddingLeft": "4px", "marginTop": "12px" },
+          "text": "通用"
+        },
+        {
+          "nid": 68,
+          "tag": "div",
+          "rect": { "x": 20, "y": 648, "w": 335, "h": 144 },
+          "layerType": "frame",
+          "layerName": "通用设置卡片",
+          "layerDescription": "白色圆角卡片包含语言深色模式清除缓存三个列表项，每项48px高之间用极浅灰分割线分隔",
+          "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "12px", "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)" },
+          "children": [
+            {
+              "nid": 69,
+              "tag": "div",
+              "rect": { "x": 20, "y": 648, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "语言设置项",
+              "layerDescription": "语言列表项，左侧地球图标中间文字右侧当前语言值简体中文和箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 70,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 658, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "语言地球图标",
+                  "layerDescription": "语言地球图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🌐"
+                },
+                {
+                  "nid": 71,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 648, "w": 48, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "语言标签",
+                  "layerDescription": "语言设置标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "语言"
+                },
+                {
+                  "nid": 72,
+                  "tag": "div",
+                  "rect": { "x": 104, "y": 648, "w": 152, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "当前语言简体中文",
+                  "layerDescription": "显示当前语言简体中文，14px中灰色右对齐",
+                  "style": { "fontSize": "14px", "color": "rgb(102,102,102,1)", "lineHeight": "48px", "textAlign": "right", "flexGrow": "1", "marginLeft": "8px" },
+                  "text": "简体中文"
+                },
+                {
+                  "nid": 73,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 659, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "语言设置进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入语言选择页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            },
+            {
+              "nid": 74,
+              "tag": "div",
+              "rect": { "x": 20, "y": 696, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "语言与深色模式分割线",
+              "layerDescription": "通用卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 75,
+              "tag": "div",
+              "rect": { "x": 20, "y": 696.5, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "深色模式设置项",
+              "layerDescription": "深色模式列表项，左侧月亮图标中间文字右侧关闭状态灰色开关",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 76,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 706, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "深色模式月亮图标",
+                  "layerDescription": "深色模式月亮图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🌙"
+                },
+                {
+                  "nid": 77,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 696, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "深色模式标签",
+                  "layerDescription": "深色模式标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "深色模式"
+                },
+                {
+                  "nid": 78,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 696, "w": 134, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "深色模式项右侧占位",
+                  "layerDescription": "深色模式项弹性占位将开关推到右侧",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 79,
+                  "tag": "div",
+                  "rect": { "x": 271, "y": 708, "w": 44, "h": 24 },
+                  "layerType": "component",
+                  "layerName": "深色模式开关控件",
+                  "layerDescription": "开关控件关闭状态浅灰#E5E5E5，宽44px高24px圆角12px，左侧白色滑块",
+                  "style": { "display": "flex", "alignItems": "center", "justifyContent": "flex-start", "width": "44px", "height": "24px", "backgroundColor": "rgb(229,229,229,1)", "borderRadius": "12px", "padding": "2px", "flexShrink": "0" },
+                  "children": [
+                    {
+                      "nid": 80,
+                      "tag": "div",
+                      "rect": { "x": 271, "y": 710, "w": 20, "h": 20 },
+                      "layerType": "frame",
+                      "layerName": "深色模式开关滑块",
+                      "layerDescription": "开关白色圆形滑块20×20带微阴影，位于左侧表示关闭",
+                      "style": { "width": "20px", "height": "20px", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "10px", "boxShadow": "0px 1px 3px rgba(0,0,0,0.15)" }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nid": 81,
+              "tag": "div",
+              "rect": { "x": 20, "y": 744.5, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "深色模式与缓存分割线",
+              "layerDescription": "通用卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 82,
+              "tag": "div",
+              "rect": { "x": 20, "y": 745, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "清除缓存设置项",
+              "layerDescription": "清除缓存列表项，左侧扫帚图标中间文字右侧缓存大小128MB灰色和箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 83,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 755, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "清除缓存扫帚图标",
+                  "layerDescription": "清除缓存扫帚图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🧹"
+                },
+                {
+                  "nid": 84,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 745, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "清除缓存标签",
+                  "layerDescription": "清除缓存标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "清除缓存"
+                },
+                {
+                  "nid": 85,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 745, "w": 152, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "缓存大小128MB",
+                  "layerDescription": "显示当前缓存大小128MB，14px辅助灰#999右对齐",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "lineHeight": "48px", "textAlign": "right", "flexGrow": "1", "marginLeft": "8px" },
+                  "text": "128MB"
+                },
+                {
+                  "nid": 86,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 756, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "清除缓存进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入清除缓存页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 87,
+          "tag": "div",
+          "rect": { "x": 20, "y": 804, "w": 335, "h": 18 },
+          "layerType": "text",
+          "layerName": "关于与其他分组标题",
+          "layerDescription": "分组标题文字关于与其他，14px中等粗体中灰色，上方留白12px",
+          "style": { "fontSize": "14px", "fontWeight": "500", "color": "rgb(102,102,102,1)", "lineHeight": "18px", "paddingLeft": "4px", "marginTop": "12px" },
+          "text": "关于与其他"
+        },
+        {
+          "nid": 88,
+          "tag": "div",
+          "rect": { "x": 20, "y": 822, "w": 335, "h": 144 },
+          "layerType": "frame",
+          "layerName": "关于设置卡片",
+          "layerDescription": "白色圆角卡片包含关于我们用户协议隐私政策三个列表项，每项48px高之间用极浅灰分割线分隔",
+          "style": { "display": "flex", "flexDirection": "column", "backgroundColor": "rgb(255,255,255,1)", "borderRadius": "12px", "boxShadow": "0px 2px 8px rgba(0,0,0,0.08)" },
+          "children": [
+            {
+              "nid": 89,
+              "tag": "div",
+              "rect": { "x": 20, "y": 822, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "关于我们设置项",
+              "layerDescription": "关于我们列表项，左侧信息图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 90,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 832, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "关于我们信息图标",
+                  "layerDescription": "关于我们信息图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "ℹ️"
+                },
+                {
+                  "nid": 91,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 822, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "关于我们标签",
+                  "layerDescription": "关于我们标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "关于我们"
+                },
+                {
+                  "nid": 92,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 822, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "关于项右侧占位",
+                  "layerDescription": "关于我们项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 93,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 833, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "关于我们进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入关于页面",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            },
+            {
+              "nid": 94,
+              "tag": "div",
+              "rect": { "x": 20, "y": 870, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "关于与用户协议分割线",
+              "layerDescription": "关于卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 95,
+              "tag": "div",
+              "rect": { "x": 20, "y": 870.5, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "用户协议设置项",
+              "layerDescription": "用户协议列表项，左侧文档图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 96,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 880, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "用户协议文档图标",
+                  "layerDescription": "用户协议文档图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "📄"
+                },
+                {
+                  "nid": 97,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 870, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "用户协议标签",
+                  "layerDescription": "用户协议标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "用户协议"
+                },
+                {
+                  "nid": 98,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 870, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "协议项右侧占位",
+                  "layerDescription": "用户协议项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 99,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 881, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "用户协议进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入用户协议页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            },
+            {
+              "nid": 100,
+              "tag": "div",
+              "rect": { "x": 20, "y": 918.5, "w": 335, "h": 0.5 },
+              "layerType": "frame",
+              "layerName": "用户协议与隐私政策分割线",
+              "layerDescription": "关于卡片内部分割线，极浅灰左边距44px",
+              "style": { "height": "0.5px", "backgroundColor": "rgb(240,240,240,1)", "marginLeft": "44px" }
+            },
+            {
+              "nid": 101,
+              "tag": "div",
+              "rect": { "x": 20, "y": 919, "w": 335, "h": 48 },
+              "layerType": "frame",
+              "layerName": "隐私政策设置项",
+              "layerDescription": "隐私政策列表项，左侧盾牌锁图标中间文字右侧箭头",
+              "style": { "display": "flex", "alignItems": "center", "padding": "0 16px", "height": "48px" },
+              "children": [
+                {
+                  "nid": 102,
+                  "tag": "span",
+                  "rect": { "x": 20, "y": 929, "w": 20, "h": 20 },
+                  "layerType": "icon",
+                  "layerName": "隐私政策盾牌图标",
+                  "layerDescription": "隐私政策盾牌锁图标20×20中灰#666",
+                  "style": { "fontSize": "20px", "color": "rgb(102,102,102,1)", "flexShrink": "0" },
+                  "text": "🔒"
+                },
+                {
+                  "nid": 103,
+                  "tag": "div",
+                  "rect": { "x": 48, "y": 919, "w": 72, "h": 48 },
+                  "layerType": "text",
+                  "layerName": "隐私政策标签",
+                  "layerDescription": "隐私政策标签，16px深灰色",
+                  "style": { "fontSize": "16px", "color": "rgb(26,26,26,1)", "lineHeight": "48px", "marginLeft": "8px" },
+                  "text": "隐私政策"
+                },
+                {
+                  "nid": 104,
+                  "tag": "div",
+                  "rect": { "x": 128, "y": 919, "w": 160, "h": 48 },
+                  "layerType": "frame",
+                  "layerName": "政策项右侧占位",
+                  "layerDescription": "隐私政策项弹性占位",
+                  "style": { "flexGrow": "1" }
+                },
+                {
+                  "nid": 105,
+                  "tag": "span",
+                  "rect": { "x": 320, "y": 930, "w": 12, "h": 14 },
+                  "layerType": "icon",
+                  "layerName": "隐私政策进入箭头",
+                  "layerDescription": "向右箭头12×14浅灰，点击进入隐私政策页",
+                  "style": { "fontSize": "14px", "color": "rgb(153,153,153,1)", "flexShrink": "0", "marginLeft": "8px" },
+                  "text": "›"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nid": 106,
+          "tag": "div",
+          "rect": { "x": 20, "y": 978, "w": 335, "h": 44 },
+          "layerType": "component",
+          "layerName": "退出登录按钮",
+          "layerDescription": "退出登录按钮，红色#EF4444边框1px白色背景圆角8px，点击弹出二次确认弹窗，上方留白24px，内居中文本",
+          "style": { "display": "flex", "alignItems": "center", "justifyContent": "center", "border": "1px solid rgb(239,68,68,1)", "borderRadius": "8px", "backgroundColor": "rgb(255,255,255,1)", "marginTop": "24px", "height": "44px" },
+          "children": [
+            {
+              "nid": 107,
+              "tag": "div",
+              "rect": { "x": 20, "y": 978, "w": 335, "h": 44 },
+              "layerType": "text",
+              "layerName": "退出登录按钮文字",
+              "layerDescription": "退出登录按钮红色文字，15px中等粗体",
+              "style": { "fontSize": "15px", "fontWeight": "500", "color": "rgb(239,68,68,1)", "lineHeight": "44px", "textAlign": "center" },
+              "text": "退出登录"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
